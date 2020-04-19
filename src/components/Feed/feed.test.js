@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Feed from './index';
+import Feed from './feed';
 
 
 it('renders with empty feed object', () => {

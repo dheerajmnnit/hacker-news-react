@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Feedview from './index';
+import Feedview from './feedview';
 
 
 it('renders api data', () => {

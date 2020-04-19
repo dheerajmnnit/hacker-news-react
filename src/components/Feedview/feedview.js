@@ -1,5 +1,5 @@
 import React from 'react';
-import Feed from '../Feed';
+import Feed from '../Feed/feed';
 import { getQueryStringValue } from '../../utils';
 import AppConstants from '../../app-constants';
 

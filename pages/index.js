@@ -1,5 +1,5 @@
 import React from 'react';
-import FeedView from '../src/components/Feedview';
+import FeedView from '../src/components/Feedview/feedview';
 
 const HackerNews = () => (
   <div>
