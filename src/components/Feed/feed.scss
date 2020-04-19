@@ -1,0 +1,97 @@
+.content {
+  h5 {
+    font-size: 14px;
+  }
+  a,address, time, button {
+    font-size: 12px;
+  }
+}
+.commentsNumber {
+  width: 60px;
+  text-align: center;
+}
+
+.upvoteContainer {
+  padding-right: 5px;
+  position: relative;
+  width: 65px;
+  text-align: right;
+}
+
+.upvoteContainer > span {
+  padding-right: 3px;
+}
+
+.low {
+  color: #000;
+}
+
+.medium {
+  color: rgba(75, 40, 19, 1);
+}
+
+.high {
+  color: rgba(223, 119, 65, 1);
+}
+
+.upvoteAction {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.upvoteAction:focus {
+  outline: 1px solid blue;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(153, 153, 153, 1);
+  bottom: 10px;
+  position: relative;
+}
+
+.upvoted .arrow {
+  border-bottom-color: rgba(13, 103, 45, 1);
+}
+
+.title {
+  padding-right: 5px;
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+}
+
+.domain {
+  padding-right: 5px;
+  color: rgba(122, 120, 118, 1);
+}
+
+.author {
+  color: #000000;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+.author span {
+  color: rgba(122, 120, 118, 1);
+}
+
+.time {
+  padding-right: 5px;
+  color: rgba(122, 120, 118, 1);
+}
+
+.hideButton {
+  color: rgba(122, 120, 118, 1);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.hideButton span {
+  color: #000;
+}

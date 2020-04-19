@@ -1,1 +1,1 @@
-# hacker-news-react
+# Hacker-News-React

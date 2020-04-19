@@ -1,0 +1,96 @@
+.feedsTable {
+  position: relative;
+  padding: 5px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: auto;
+  max-width: 1200px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  
+  .loader {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  table {
+    position: relative;
+    width: 100%;
+
+    thead,
+    tbody tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    tbody {
+      display: block;
+      max-height: calc(100vh - 90px);
+      overflow: auto;
+    }
+
+    .header {
+      height: 30px;
+      background-color: rgba(255, 102, 0, 1);
+
+      span {
+        line-height: 30px;
+      }
+
+      img {
+        height: 18px;
+        width: 18px;
+        border: 2px solid #fff;
+        margin: 5px;
+        float: left;
+      }
+
+      .topNavLinks a {
+        color: #000;
+        text-decoration: initial;
+        padding: 0 10px;
+      }
+      
+      .topNavLinks a:hover, .topNavLinks a.selected {
+        color: #fff;
+      }
+    }
+  }
+
+  .feedContainer {
+    height: 25px;
+    overflow-wrap: break-word;
+  }
+
+  tbody {
+    .feedContainer:nth-child(odd) {
+      background-color: rgba(230, 230, 225, 1);
+    }
+    
+    .feedContainer:nth-child(even) {
+      background-color: rgba(246, 246, 241, 1);
+    }
+  }
+  
+  
+  tfoot {
+
+    .feedContainer {
+      background-color: rgba(246, 246, 241, 1);
+      height: 35px;
+    }
+
+    .moreButton {
+      background: transparent;
+      border: 0;
+      color: rgba(255, 102, 0, 1);
+      margin-left: 120px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: initial;
+    }
+  }  
+  
+}
