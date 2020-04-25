@@ -1,0 +1,73 @@
+{
+  "name": "hacker-news",
+  "version": "1.0.0",
+  "description": "Hacker news clone",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+    "test": "jest",
+    "lint:js": "eslint --ext=js --ext=jsx .",
+    "lint": "npm run lint:js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 120
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "^.+\\.(css|less|scss)$": "babel-jest"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "repository": "https://github.com/dheerajmnnit/hacker-news-react.git",
+  "author": "dheerajprajapati0792@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^9.3.4",
+    "next-images": "^1.4.0",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-jest": "^25.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.5",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "react-test-renderer": "^16.13.1"
+  }
+}
